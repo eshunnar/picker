@@ -73,13 +73,15 @@ function DropdownPickerExample() {
   const [value, setValue] = React.useState('key1');
 
   return (
-    <Picker
-      selectedValue={value}
-      onValueChange={(v) => setValue(v)}
-      mode="dropdown">
-      <Item label="hello" value="key0" />
-      <Item label="world" value="key1" />
-    </Picker>
+    <View style={{height: 45, justifyContent: 'center'}}>
+      <Picker
+        selectedValue={value}
+        onValueChange={(v) => setValue(v)}
+        mode="dropdown">
+        <Item label="hello" value="key0" />
+        <Item label="world" value="key1" />
+      </Picker>
+    </View>
   );
 }
 
@@ -237,48 +239,48 @@ export const title = '<Picker>';
 export const description =
   'Provides multiple options to choose from, using either a dropdown menu or a dialog.';
 export const examples = [
-  {
-    title: 'Basic Picker',
-    render: BasicPickerExample,
-  },
-  {
-    title: 'Styled Picker',
-    render: StyledPickerExample,
-  },
-  {
-    title: 'Disabled Picker',
-    render: DisabledPickerExample,
-  },
-  {
-    title: 'Disabled Specific Picker',
-    render: DisabledSpecificPickerExample,
-  },
+  // {
+  //   title: 'Basic Picker',
+  //   render: BasicPickerExample,
+  // },
+  // {
+  //   title: 'Styled Picker',
+  //   render: StyledPickerExample,
+  // },
+  // {
+  //   title: 'Disabled Picker',
+  //   render: DisabledPickerExample,
+  // },
+  // {
+  //   title: 'Disabled Specific Picker',
+  //   render: DisabledSpecificPickerExample,
+  // },
   {
     title: 'Dropdown Picker',
     render: DropdownPickerExample,
   },
-  {
-    title: 'Multiline Dropdown Picker',
-    render: DropdownMultilinePickerExample,
-  },
-  {
-    title: 'Picker with prompt message',
-    render: PromptPickerExample,
-  },
-  {
-    title: 'Multiline Picker with prompt message',
-    render: PromptMultilinePickerExample,
-  },
-  {
-    title: 'Picker with no listener',
-    render: NoListenerPickerExample,
-  },
-  {
-    title: 'Colorful pickers',
-    render: ColorPickerExample,
-  },
-  {
-    title: 'Picker with changed color of arrow',
-    render: CustomDropdownArrowColorPickerExample,
-  },
+  // {
+  //   title: 'Multiline Dropdown Picker',
+  //   render: DropdownMultilinePickerExample,
+  // },
+  // {
+  //   title: 'Picker with prompt message',
+  //   render: PromptPickerExample,
+  // },
+  // {
+  //   title: 'Multiline Picker with prompt message',
+  //   render: PromptMultilinePickerExample,
+  // },
+  // {
+  //   title: 'Picker with no listener',
+  //   render: NoListenerPickerExample,
+  // },
+  // {
+  //   title: 'Colorful pickers',
+  //   render: ColorPickerExample,
+  // },
+  // {
+  //   title: 'Picker with changed color of arrow',
+  //   render: CustomDropdownArrowColorPickerExample,
+  // },
 ];
