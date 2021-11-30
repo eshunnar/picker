@@ -226,6 +226,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNCPicker;
 				SKIP_INSTALL = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -242,6 +243,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNCPicker;
 				SKIP_INSTALL = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
